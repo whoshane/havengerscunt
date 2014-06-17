@@ -1,0 +1,81 @@
+
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+body {
+	background-color:#6e0b74;
+}
+
+.container{
+	position:absolute;
+	top: 50%;
+	margin-top: -350px;
+	left:0;
+	width:100%;
+}
+
+.scoreboard{
+	width: 500px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#f6f6f6;
+	padding: 40px 40px 40px 70px;
+}
+
+p.error{
+	color:red;
+	padding: 0px 0px 0px 0px;
+}
+
+form {
+	width: 300px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#f6f6f6;
+	padding:5px 50px 30px 120px;
+}
+
+#score{
+	font-size: 20px;
+}
+
+thead{
+	font-size: 24px;
+	font-weight: normal;
+	color: #dddddd;
+	background-color:#6e0b74; 
+}
+
+td,th{
+	padding: .6em .4em .3em .3em;
+	text-align: center;	
+}
+
+
+.submitbutton {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6f0b74), color-stop(1, #6f0b74) );
+	background:-moz-linear-gradient( center top, #6f0b74 5%, #6f0b74 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6f0b74', endColorstr='#6f0b74');
+	background-color:#86069c;
+	border:1px solid #640d69;
+	display:inline-block;
+	color:#dddddd;
+	font-family:arial;
+	font-size:20px;
+	font-weight:normal;
+	padding:7px 16px;
+	text-decoration:none;
+}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+
+{% block title%} Scoring {% endblock %}
+
+{% block content %}
+	<div class="container">
+	<form name="input" action="/addscore1qazxsw23edcvfr45tgbnhy67ujm/" method="post">{% csrf_token %}
+	<h3> Enter Score </h3>
+		Team Number: </br><input type="text" name="team_id"><br>
+		Item Number: </br><input type="text" name="item_id"><br>
+		Score:		 </br><input type="text" name="score"><br>
+		 {% if err %}
+			 <p class="error">{{ err }}</p>
+		 {% endif %}
+		<input class="submitbutton" type="submit" value="Submit">
+	</form>
+	</div><!--closes formcontainer-->
+{% endblock %}	

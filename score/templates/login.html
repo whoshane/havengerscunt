@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+
+{% block title%} Login {% endblock %}
+
+{% block content %}
+	<div class="container">
+	<form name="input" action="/login1qazxsw23edcvfr45tgbnhy67ujm/" method="post">{% csrf_token %}
+		<h3> Login </h3>
+		User Name: </br>
+		 <input type="text" name="username"><br>
+		Password: </br>
+		 <input type="password" name="password"><br>
+		 {% if err %}
+			 <p class="error">{{ err }}</p>
+		 {% endif %}
+		<input class="submitbutton" type="submit" value="Submit">
+	</form>
+	</div><!--formcontainer class-->
+{% endblock %}	
